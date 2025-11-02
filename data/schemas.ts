@@ -1,5 +1,6 @@
 import * as R from "remeda";
 import z from "zod";
+
 export const playerSchema = z.object({
 	id: z.cuid(),
 	name: z.string(),
@@ -15,15 +16,6 @@ export const teamSchema = z.object({
 });
 
 export type Team = z.infer<typeof teamSchema>;
-
-export const gameStateSchema = z.object({
-	currentRoundIndex: z.number().positive(),
-	currentPlayer: z.cuid(),
-	isFinal: z.boolean(),
-	blueTeam: teamSchema,
-	redTeam: teamSchema,
-});
-export type GameState = z.infer<typeof gameStateSchema>;
 
 export const roundAnswerSchema = z.object({
 	answer: z.string(),
@@ -41,3 +33,13 @@ export const roundDataSchema = z.object({
 });
 
 export type RoundData = z.infer<typeof roundDataSchema>;
+
+export const gameStateSchema = z.object({
+	rounds: z.array(roundDataSchema),
+	currentRoundIndex: z.number().positive(),
+	currentPlayer: z.cuid(),
+	isFinal: z.boolean(),
+	blueTeam: teamSchema,
+	redTeam: teamSchema,
+});
+export type GameState = z.infer<typeof gameStateSchema>;
