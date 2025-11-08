@@ -1,8 +1,0 @@
-@import "tailwindcss";
-@font-face {
-  font-family: "Doto";
-  src: url("/src/assets/Doto-VariableFont_ROND\,wght.ttf");
-}
-@theme {
-  --font-sans: "Doto", sans-serif;
-}
