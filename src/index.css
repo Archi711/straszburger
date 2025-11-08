@@ -1,0 +1,12 @@
+@import "../styles/globals.css";
+
+@font-face {
+  font-family: 'Doto';
+  src: url("./Doto.ttf");
+}
+
+@theme inline {
+  --font-doto: "Doto";
+  --color-foreground: var(--color-amber-300);
+  --color-background: var(--color-stone-900);
+}
