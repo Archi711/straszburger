@@ -1,0 +1,36 @@
+{
+  "version": "6",
+  "dialect": "sqlite",
+  "id": "0746df7c-7624-4b14-936d-6ca1dba7dd5b",
+  "prevId": "dd6858e4-46de-4477-a99d-1e1cc5821252",
+  "tables": {
+    "games_table": {
+      "name": "games_table",
+      "columns": {
+        "id": {
+          "name": "id",
+          "type": "text(4)",
+          "primaryKey": true,
+          "notNull": true,
+          "autoincrement": false,
+          "default": "'01tr'"
+        }
+      },
+      "indexes": {},
+      "foreignKeys": {},
+      "compositePrimaryKeys": {},
+      "uniqueConstraints": {},
+      "checkConstraints": {}
+    }
+  },
+  "views": {},
+  "enums": {},
+  "_meta": {
+    "schemas": {},
+    "tables": {},
+    "columns": {}
+  },
+  "internal": {
+    "indexes": {}
+  }
+}
