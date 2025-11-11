@@ -28,12 +28,6 @@ const server = serve({
 			}
 			return new Response("Not found", { status: 404 });
 		},
-		"/api/hello/:name": async (req) => {
-			const name = req.params.name;
-			return Response.json({
-				message: `Hello, ${name}!`,
-			});
-		},
 	},
 
 	development: process.env.NODE_ENV !== "production" && {
