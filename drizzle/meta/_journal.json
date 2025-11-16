@@ -15,6 +15,13 @@
       "when": 1762864002988,
       "tag": "0001_lonely_zarek",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "6",
+      "when": 1763291033852,
+      "tag": "0002_funny_mercury",
+      "breakpoints": true
     }
   ]
 }
