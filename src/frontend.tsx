@@ -13,6 +13,9 @@ import { Layout } from "@/components/Layout";
 import { App } from "./App";
 
 const Admin = React.lazy(() => import("src/components/features/admin/admin"));
+const AdminMain = React.lazy(
+	() => import("src/components/features/admin/admin-main"),
+);
 const Display = React.lazy(
 	() => import("src/components/features/display/display"),
 );
@@ -31,6 +34,7 @@ const app = (
 					<Route element={<Layout />}>
 						<Route index Component={App}></Route>
 						<Route path="/admin" Component={Admin}></Route>
+						<Route path="/admin/:gameId" Component={AdminMain}></Route>
 						<Route index path="/display" Component={Display}></Route>
 						<Route path="/display/:gameId" Component={GameDisplay}></Route>
 					</Route>

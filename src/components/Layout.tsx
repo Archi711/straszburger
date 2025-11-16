@@ -1,8 +1,10 @@
 import { Link, Outlet } from "react-router";
+import { Toaster } from "@/components/ui/sonner";
 
 export function Layout() {
 	return (
 		<div className="min-h-screen flex flex-col gap-4">
+			<Toaster />
 			<header className="flex items-center justify-between px-rws py-4 border-b">
 				<Link to="/" className="text-5xl flex gap-0.5">
 					<span className="sr-only">Familiada</span>
